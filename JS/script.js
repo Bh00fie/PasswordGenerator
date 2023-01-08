@@ -90,6 +90,7 @@ var upperCasedCharacters = [
 
 // ----------- 
 // Function to prompt user for password options
+
 function getPasswordOptions() {
 
   // We start asking the user how long does he wants the password to be
@@ -115,11 +116,13 @@ function getPasswordOptions() {
   }
 }
 
+getPasswordOptions()
+
 // Function for getting a random element from an array
 function getRandom(arr) {
   // Using the following nested function we take an array as input and output a random character, what we are looking for to use in this function is to get a random character from the array created by the user
-    return arr[Math.floor(Math.random() * arr.length)];
-  };
+  return arr[Math.floor(Math.random() * arr.length)];
+};
 
   // Empty variable is created as this will be filled up depending on the user boolean response
   var selectedCharacters = [];
@@ -144,8 +147,16 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
+  var generatedString = ""; // The generated string
 
-}
+  // This while loop will add single character to generatedString as many as the user defined as password lenght
+  while (generatedString.length < characterLength) {
+    var randomCharacter = getRandom(selectedCharacters);
+    generatedString += randomCharacter;
+  }
+
+  return generatedString; // Outputs a string of characters based on the user's chosen length
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
