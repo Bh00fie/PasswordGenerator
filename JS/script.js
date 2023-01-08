@@ -94,7 +94,7 @@ var upperCasedCharacters = [
 function getPasswordOptions() {
 
   // We start asking the user how long does he wants the password to be
-  var characterLength = prompt("How many character?"); 
+  characterLength = prompt("How many character?"); 
 
   // We check if the user input is correct, if a letter is not being used the user should try again, this can be done by checking IF the input is not a number, IF it is a number, proceed to go ahead with other questions
   if (isNaN(characterLength)) {
@@ -108,10 +108,10 @@ function getPasswordOptions() {
       alert ("Length selected is not above than 64, please try again something lower");
       getPasswordOptions();
     } else { //At this point, the input is correct and we proceed to take information of how the user wants his password to be
-        var lowercaseCharacter = confirm("Do you want Lowercase characters");
-        var uppercaseCharacter = confirm("Do you want Uppercase characters");
-        var numericCharacter = confirm("Do you want Numeric characters");
-        var specialCharacter = confirm("Do you want Special characters");
+        lowercaseCharacter = confirm("Do you want Lowercase characters");
+        uppercaseCharacter = confirm("Do you want Uppercase characters");
+        numericCharacter = confirm("Do you want Numeric characters");
+        specialCharacter = confirm("Do you want Special characters");
     }
   }
 }
