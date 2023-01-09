@@ -28,10 +28,39 @@ The code has been deployed on the following webpage: https://bh00fie.github.io/P
 ## Final Results
 When you open your code in the browser my resulting analysis should look similar to the following:
 
-- User Input:
-![]("/images/")
+- User Input: 
 
-- Webpage Output
+Character Length
+
+![Character-Length](Images/CharacterLength.jpg)
+
+Lowercase Character
+
+![Character-Length](Images/Lowercase.jpg)
+
+Uppercase Character
+
+![Character-Length](Images/Uppercase.jpg)
+
+Numbers
+
+![Character-Length](Images/Numbers.jpg)
+
+Special Character
+
+![Character-Length](Images/Special.jpg)
+
+
+- Result:
+
+The output is as following:
+
+![Output](Images/Result.jpg)
+
+
+As requested by the description of this challenge, the website has been made responsive:
+
+![Output](Images/Responsive.jpg)
 
 ---
 
