@@ -112,6 +112,12 @@ function getPasswordOptions() {
         uppercaseCharacter = confirm("Do you want Uppercase characters");
         numericCharacter = confirm("Do you want Numeric characters");
         specialCharacter = confirm("Do you want Special characters");
+
+        // In case user decided to not have any type of character, this is not possible so code will alert the user and ask again to chose a password
+        if (!lowercaseCharacter && !uppercaseCharacter && !numericCharacter && !specialCharacter) {
+          alert("You must select at least one character type.");
+          getPasswordOptions();
+          }
     }
   }
 }
